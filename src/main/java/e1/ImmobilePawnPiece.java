@@ -14,4 +14,5 @@ public class ImmobilePawnPiece extends AbstractPiece {
     public boolean canMove(int row, int column) {
         return false;
     }
+    
 }

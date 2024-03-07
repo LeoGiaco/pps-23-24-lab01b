@@ -1,12 +1,9 @@
 package e1;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
-import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -65,4 +62,5 @@ public class KnightPieceTest {
         this.knightPiece.move(newBadPosition.getX(), newBadPosition.getY());
         assertFalse(this.knightPiece.getX() == newBadPosition.getX() && this.knightPiece.getY() == newBadPosition.getY());
     }
+    
 }

@@ -47,4 +47,5 @@ public class LogicTest {
     void testKnightCanCapturePawn() {        
         assertTrue(logics.hit(PAWN_POS.getX(), PAWN_POS.getY()));
     }
+    
 }

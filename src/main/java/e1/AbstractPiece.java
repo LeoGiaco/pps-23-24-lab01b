@@ -26,9 +26,15 @@ public abstract class AbstractPiece implements Piece {
     }
 
     @Override
+    public Pair<Integer, Integer> getPosition() {
+        return new Pair<>(this.getX(), this.getY());
+    }
+
+    @Override
     public void move(int row, int column) {
         if (canMove(row, column)) {
             this.position = new Pair<Integer,Integer>(row, column);
         }
     }
+    
 }

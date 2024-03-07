@@ -12,8 +12,9 @@ public class KnightPiece extends AbstractPiece {
 
     @Override
     public boolean canMove(int row, int column) {
-        int diffRow = Math.abs(row - this.getY());
-        int diffColumn = Math.abs(column - this.getX());
+        int diffRow = Math.abs(row - this.getX());
+        int diffColumn = Math.abs(column - this.getY());
         return diffRow != 0 && diffColumn != 0 && diffRow + diffColumn == 3;
     }
+    
 }
